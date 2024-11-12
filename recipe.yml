@@ -13,4 +13,23 @@ install:
   - log_entity_operations
   - log_entity_operations:log_entity_operations_entity
 
-
+config:
+  import:
+    watchdog_statistics:
+      - views.view.watchdog_statistics
+    log_entity_operations:
+      - log_entity_operations.settings
+    log_entity_operations_entity:
+      - log_entity_operations_entity.settings
+  actions:
+    log_entity_operations.settings:
+      simpleConfigUpdate:
+        enabled_for:
+          - block_content.basic
+          - block_content.featured
+          - file.file
+          - media.file
+          - media.image
+          - node.article
+          - node.page
+          - taxonomy_term.tags
