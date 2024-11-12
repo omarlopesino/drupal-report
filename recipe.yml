@@ -1,0 +1,16 @@
+# A human-readable name of the Recipe for listing in UIs.
+name: 'Drupal reports'
+description: "A set of modules dedicated to view advanced site reports"
+# The type key is similar to the package key in module.info.yml. It
+# can be used by the UI to group Drupal recipes. Additionally,
+# the type 'Site' means that the Drupal recipe will be listed in
+# the installer.
+type: 'Logging'
+
+install:
+  - xray_audit
+  - watchdog_statistics
+  - log_entity_operations
+  - log_entity_operations:log_entity_operations_entity
+
+

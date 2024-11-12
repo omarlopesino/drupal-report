@@ -1,0 +1,11 @@
+{
+    "name": "metadrop/drupal-report",
+    "type": "drupal-recipe",
+    "version": "dev-main",
+    "description": "Provides logging modules",
+    "require": {
+        "drupal/watchdog_statistics": "^1.0",
+        "drupal/log_entity_operations": "1.x-dev",
+        "drupal/xray_audit": "^1.5"
+    }
+}
